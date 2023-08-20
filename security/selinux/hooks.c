@@ -7321,6 +7321,9 @@ static void selinux_nf_ip_exit(void)
 
 #ifdef CONFIG_SECURITY_SELINUX_DISABLE
 #define selinux_nf_ip_exit()
+#endif
+
+#endif /* CONFIG_NETFILTER */
 #ifdef CONFIG_SECURITY_SELINUX_DISABLE
 int selinux_disable(struct selinux_state *state)
 {
